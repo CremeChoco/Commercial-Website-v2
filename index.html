@@ -6,15 +6,16 @@
 <head>
   <meta charset="UTF-8">
   <title>CowHeberg - Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Raleway:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins:500|Raleway:700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet"/>
   
-  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'/>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'/>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/pricing.css"/>
 </head>
 
 <body>
@@ -33,9 +34,10 @@
       <ul class="nav navbar-nav navbar-right">
 
           
-        <li><a href="#" class="navSelect">HOME</a></li>           
-        <li><a href="#about" class="navSelect" id="aboutNav">A PROPOS</a></li>
-        <li><a href="#contact" id="contactNavButton" id="contactNav" class="navSelect">CONTACT</a></li>
+        <li><a href="index.html" class="navSelect">HOME</a></li>
+        <li><a href="#dealBar" class="navSelect">A PROPOS</a></li>
+        <li><a href="#about" class="navSelect">OFFRES</a></li>
+        <li><a href="#contact" id="contactNavButton" class="navSelect">CONTACT</a></li>
         <li><a href="http://manager.cow-heberg.fr" class="navSelect">CONNEXION</a></li>
 
       </ul>
@@ -85,7 +87,7 @@
       <p>Des offres gratuites et puissantes pour les particuliers.</p>
     </div>
     <div class="col-md-4 text-center" id="features">
-      <a href="http://manager.cow-heberg.fr">VOIR NOS OFFRES</a>
+      <a href="#about">VOIR NOS OFFRES</a>
     </div>
   </div>
 
@@ -93,7 +95,7 @@
 <!-- END DEAL BAR -->
     
 <!-- START OVERVIEW -->
-<div class="container" id="overview">
+<div class="container-fluid" id="overview">
   <div class="row">
     <div class="col-md-4">
       <div id="how">
@@ -132,70 +134,132 @@
         <h4>Des développeurs</h4>
         <p>Nos développeurs travaillent sans relache pour fournir des services intuitifs et puissants. </p>
           
-        <h4>Our results.</h4>
-        <p>BLABLABla.</p>
+        <h4>Des partenaires</h4>
+        <p>Nos partenaires nous fournissent de puissantes machines pour que nos services soit plus puissants.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div id="choose">
-        <h3>The guarantee</h3>
+        <h3>Technologies</h3>
         <hr>
-        <p>Garentie frere 
-          <br><br> <a>See the full terms and conditions. </a></p>
+        <p>
+          Nous utilisions différentes technologies, tel que
+          <ul>
+            <li><a href="https://pydio.com/fr">Pydio</a>,</li>
+            <li><a href="https://owncloud.org/">Owncloud</a>,</li>
+            <li><a href="http://cpanel.com/">CPanel</a> et</li>
+            <li><a href="https://openvpn.net/">OpenVPN</a>.</li>
+          </ul>
+          Vous pouvez ansi choisir la technologies que vous preferez afin de l'utiliser au mieux.
+          <br><br>
+        </p>
       </div>
     </div>
   </div>
-       
+
 </div>
 <!-- END OVERVIEW -->
+  <br><br><br><br><br><br>
 
-<!-- START ABOUT -->
-<div class="container-fluid" id="about">
-  <div class="row row-eq-height">
-    
-    <div class="col-md-4 text-center" id="aboutNav">
-      <div class="btn-group-vertical btn-group-lg" role="group">
-        <button type="button" class="btn" id="missionButton">our mission</button>
-        <hr>
-        <button type="button" class="btn active" id="valuesButton">our values</button>
-        <hr>
-        <button type="button" class="btn" id="visionButton">our vision</button>
-        
+  <!-- START ABOUT -->
+  <div class="container-fluid wrapper" id="about">
+    <div class="row row-eq-height">
+      <div class="col-md-4 text-center">
+        <div class="package">
+          <div class="name">Cloud</div>
+          <div class="price">0€</div>
+          <div class="trial">1 an</div>
+          <hr>
+          <ul>
+            <li class="pricing-text">
+              <strong>15Go</strong>
+              de stockage
+            </li>
+            <li class="pricing-text">
+              <strong>2</strong>
+              techologies
+            </li>
+            <li class="pricing-text">
+              <strong>1</strong>
+              compte
+            </li>
+            <li class="pricing-text">
+              <strong>7/24</strong>
+              Support
+            </li>
+            <li class="pricing-text">
+              <div onclick="location.href='http://manager.cow-heberg.fr'" class="trial">Commander</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="package brilliant">
+          <div class="name">Web</div>
+          <div class="price">0€</div>
+          <div class="trial">1 an</div>
+          <hr>
+          <ul>
+            <li class="pricing-text">
+              <strong>1</strong>
+              Site web
+            </li>
+            <li class="pricing-text">
+              <strong>10</strong>
+              adresses mail
+            </li>
+            <li class="pricing-text">
+              <strong>5Go</strong>
+              de stockage
+            </li>
+            <li class="pricing-text">
+              <strong>1</strong>
+              base de données
+            </li>
+            <li class="pricing-text">
+              <strong>7/24</strong>
+              Support
+            </li>
+            <li class="pricing-text">
+              <div onclick="location.href='http://manager.cow-heberg.fr'" class="trial">Commander</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4text-center">
+        <div class="package">
+          <div class="name">Vpn</div>
+          <div class="price">€0</div>
+          <div class="trial">1 an</div>
+          <hr>
+          <ul>
+            <li class="pricing-text">
+              Bande passante
+              <strong>Illimité</strong>
+            </li>
+            <li class="pricing-text">
+              <strong>1</strong>
+              fichiers .openvpn
+            </li>
+            <li class="pricing-text">
+              <strong>2</strong>
+              localisations
+            </li>
+            <li class="pricing-text">
+              <strong>7/24</strong>
+              Support
+            </li>
+            <li class="pricing-text">
+              <div onclick="location.href='http://manager.cow-heberg.fr'" class="trial">Commander</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    
-    <div class="col-md-8" id="aboutContent">
-      <div id="missionContent">
 
-        <p>
-          CowHeberg
-        </p>
-          
-        
-        
-      </div>
-      <div id="valuesContent">
-        <p>
-          <b>Excellence</b> - CowHeberg 
-
-        </p>
-      </div>
-      <p id="visionContent">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque malesuada mi luctus, condimentum dui in, vehicula mauris. Donec non pellentesque nisl. Curabitur id urna sed lacus dignissim malesuada id sed ante. Sed vel sodales ante. Sed faucibus mauris quis arcu luctus, eu luctus nisi hendrerit. Proin ac hendrerit velit. Maecenas dui quam, sodales vitae lorem nec, porta vestibulum nunc. Proin accumsan nibh interdum metus facilisis, sit amet sollicitudin dolor ultrices. Pellentesque pretium mauris ac odio tristique consequat. Phasellus eleifend lobortis consequat. Mauris rutrum tempor bibendum. Suspendisse tellus velit, ultrices vitae vulputate ut, porttitor id ligula. Cras consequat mi faucibus arcu pellentesque, nec bibendum ante ornare. Integer mattis dignissim sapien, in rutrum turpis sagittis non.
-
-        <br><br>
-        Duis viverra blandit mollis. Mauris et sapien mauris. Nulla et diam et dolor ornare elementum non quis augue. Phasellus at ipsum leo. Vestibulum sit amet mattis dui. Nullam orci tellus, venenatis et luctus sit amet, iaculis fermentum felis. Donec faucibus nec orci non vulputate. Maecenas elit erat, convallis in euismod euismod, condimentum eu mi. Etiam mattis nec neque vel bibendum. Cras in nisl tempor, viverra mi ut, sodales lorem. In hendrerit ante nisl, sed ultricies ex aliquam sed. Cras sed nunc viverra, vulputate eros vel, feugiat ligula. Maecenas eget molestie lectus. Ut non orci nec lacus egestas imperdiet. Ut porttitor laoreet congue.
-
-        <br><br>
-        Nullam sem eros, sodales auctor egestas ac, rutrum id nulla. Integer malesuada viverra felis eu condimentum. Suspendisse vulputate ornare ipsum, a varius dui. Vivamus eget ex vitae justo volutpat maximus id sed lectus. Sed ac erat viverra, auctor urna a, dapibus quam. Donec porta sem erat, at convallis justo eleifend id. Phasellus vel fermentum eros. Proin non lorem eget dolor commodo finibus. Ut scelerisque neque et lacinia bibendum. Sed in ante ac nibh venenatis malesuada ut sed lacus. Proin at pretium erat. Curabitur vel turpis eu nulla bibendum laoreet vitae id leo. Nullam mi nibh, rutrum ac lacinia ac, ullamcorper sed neque. Sed pharetra eget nisl at tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-
-      </p>
-    </div>
-    
   </div>
-  
-</div>
 <!-- END ABOUT -->
+  <br><br><br><br><br><br>
 
   <!-- START CONTACT -->
   <div class="container-fluid" id="contact">
@@ -215,7 +279,7 @@
 <div class="container-fluid" id="footer1">
   <div class="row rowSection">
       <div class="col-md-4" id="quickLinks">
-        <h2>Quick links</h2>
+        <h2>Liens utiles</h2>
         <hr class="shortHR">
         
         <ul>
@@ -254,7 +318,8 @@
       <div class="col-md-4" id="newsletter">
         <h2 class="shortHR">Newsletter</h2>
         <hr class="shortHR">
-        <p>Stay up to date with out latest news, deals, and updates by signing up for our newsletter! For additional information, follow us on our social media profiles too!
+        <p>
+          Restez à jour avec les dernières nouvelles, offres et mises à jour en vous inscrivant à notre newsletter.<br/> Pour plus d'informations, suivez-nous sur nos profils de médias sociaux aussi.
         </p>
         
         <form action="#">
@@ -264,8 +329,8 @@
         
         <div id="socialMediaLinks">
           <a href="https://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>
-          <a href="https://twitter.com/o"><i class="fa fa-twitter-square"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="https://twitter.com/CowHeberg_"><i class="fa fa-twitter-square"></i></a>
+          <a href="https://instagram.com/cowheberg"><i class="fa fa-instagram"></i></a>
           <a href="https://www.pinterest.com/o/"><i class="fa fa-pinterest"></i></a>
         </div>
         
@@ -277,7 +342,7 @@
 
   <!-- FOOTER 2 -->
   <div class="container-fluid" id="footer2">
-    <p class="text-center">Copyright © 2016 | CowHeberg. All rights reserved. Design & code by Hugo Hérisson </p>
+    <p class="text-center">Copyright © 2016 | CowHeberg. Tous droits reservés. Créer par Hugo Hérisson & Roch Blondiaux. </p>
   </div>
 
   <!-- FOOTER 2 -->

@@ -101,41 +101,42 @@ $(document).ready(function() {
   /**** END OVERVIEW SECTION ****/
     
    /**** START ABOUT SECTION ****/
-  /**** START ABOUT SECTION ****/
- $("#visionContent").hide();
- $("#missionContent").hide();
+  /****
+ $("#vpn").hide();
+ $("#cloud").hide();
+ $("#web").show();
     
-    $("#missionButton").click(function(){
-      $("#missionButton").addClass("active");
-      $("#visionButton").removeClass("active");
-      $("#valuesButton").removeClass("active");
+    $("#webButton").click(function(){
+      $("#webButton").addClass("active");
+      $("#vpnButton").removeClass("active");
+      $("#cloudButton").removeClass("active");
       
-      $("#missionContent").show();
-      $("#visionContent").hide();
-      $("#valuesContent").hide();
+      $("#web").show();
+      $("#vpn").hide();
+      $("#cloud").hide();
     });
     
-     $("#visionButton").click(function(){
-      $("#visionButton").addClass("active");
-      $("#missionButton").removeClass("active");
-      $("#valuesButton").removeClass("active");
+     $("#vpnButton").click(function(){
+      $("#vpnButton").addClass("active");
+      $("#webButton").removeClass("active");
+      $("#cloudButton").removeClass("active");
        
        
-      $("#visionContent").show();
-      $("#missionContent").hide();
-      $("#valuesContent").hide();
+      $("#vpn").show();
+      $("#cloud").hide();
+      $("#web").hide();
     });
     
-    $("#valuesButton").click(function(){
-      $("#valuesButton").addClass("active");
-      $("#missionButton").removeClass("active");
-      $("#visionButton").removeClass("active");
+    $("#cloudButton").click(function(){
+      $("#cloudButton").addClass("active");
+      $("#webButton").removeClass("active");
+      $("#vpnButton").removeClass("active");
       
-      $("#valuesContent").show();
-      $("#missionContent").hide();
-      $("#visionContent").hide();
+      $("#cloud").show();
+      $("#web").hide();
+      $("#vpn").hide();
     });
-  /**** END ABOUT SECTION ****/
+   ****/
   /**** END ABOUT SECTION ****/
 
   scaleVideoContainer();
